@@ -6,9 +6,9 @@ class apt::repo::puppetlabs {
   }
 
   if $::lsbdistcodename == 'squeeze' {
-    $repository = 'main',
+    $repository = 'main'
   } else {
-    $repository = 'main dependancies',
+    $repository = 'main dependancies'
   }
   apt::repository { 'puppetlabs':
     url        => 'http://apt.puppetlabs.com',
